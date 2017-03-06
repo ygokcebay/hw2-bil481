@@ -26,15 +26,25 @@ public class SuggestionEngine extends Java8BaseListener {
 		}
 
 		public int compareTo(Candidate c) {
-			return (int) (this.distance - c.distance);
+			int difference = (int) (this.distance - c.distance);
+			if (difference == 0 && !methodName.equals(c.methodName)) {
+				return 1;
+			}
+			return difference;
 		}
 
+		@Override
 		public boolean equals(Object o) {
 			if (o instanceof Candidate) {
 				return ((Candidate)o).methodName.equals(
 					this.methodName);
 			}
 			return super.equals(o);
+		}
+
+		@Override
+		public int hashCode() {
+			return methodName.hashCode();
 		}
 	}
 
