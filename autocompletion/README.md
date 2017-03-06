@@ -25,7 +25,7 @@ cat input/System.java | java -Djava.util.logging.config.file=logging.properties 
 Suggestions are found:
 getProperty: 2.0
 getProperties: 4.0
-getSecurityManager: 12.0
+clearProperty: 6.0
 ```
 
 The numbers above correspond to the distance of each method name to the given word. 3 suggestions are returned as requested.
@@ -47,7 +47,7 @@ cat input/String.java | java -Djava.util.logging.config.file=logging.properties 
 Suggestions are found:
 toUpperCase: 4.0
 compare: 5.0
-trim: 6.0
+isEmpty: 6.0
 ```
 
 # Details
