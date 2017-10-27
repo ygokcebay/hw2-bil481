@@ -54,3 +54,6 @@ mvn exec:java -Dexec.mainClass="com.mycompany.app.ProcessXMLFile" -Dexec.args="r
 ```
 
 The output image test.png will be available under output/ folder.
+
+
+![image](https://user-images.githubusercontent.com/12052/32127861-64da5238-bb82-11e7-8bd8-71099f8caf7d.png)
